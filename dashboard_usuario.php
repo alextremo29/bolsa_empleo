@@ -69,7 +69,7 @@
 <!-- Creando un footer para las paginas-->
 <footer class="py-3" style="bottom: 0px; background-color: #193338;">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Desarrollado con Laravel 5.6. 2018</p>
+    <p class="m-0 text-center text-white">Copyright &copy; Bambusa.Digital 2018</p>
   </div>
 </footer>
 
