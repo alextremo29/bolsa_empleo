@@ -36,17 +36,20 @@
                                     cerrar
                                     </a>
                                     <form id="logout-form" action="#" method="POST" style="display: none;">
-                                        @csrf
+                                        
                                     </form>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">
-                                Historico facturas
+                                Datos Personales
                             </a>
                             <a href="#">
-                                Estado de cuenta
+                                Informacion Academica
+                            </a>
+                            <a href="#">
+                                Experiencia Laboral
                             </a>
                         </li>
                 </nav>
