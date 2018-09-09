@@ -18,16 +18,13 @@
         <div class="wrapper">
             <nav id="sidebar">
                     <div class="sidebar-header">
-                        <h3><?php echo $_SESSION["nombre_pers"]; ?></h3>
-                        <strong>AC</strong>
+                        <h3><img src="img/user.png" alt="usuario" width="100" height="100"></h3>
+                        <strong>BE</strong>
                     </div>
 
                     <ul class="list-unstyled components">
                         <li class="active">
-                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
-
-                                holas
-                            </a>
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><?php echo $_SESSION["nombre_pers"]; ?></a>
                             <ul class="collapse list-unstyled" id="homeSubmenu">
                                 <li>
                                     <a href="#"><i class="fas fa-home"></i> Inicio</a>
