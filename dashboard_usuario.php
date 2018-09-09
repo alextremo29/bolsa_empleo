@@ -66,13 +66,5 @@
     <p class="m-0 text-center text-white">Copyright &copy; Bambusa.Digital 2018</p>
   </div>
 </footer>
-
-    <script type="text/javascript">
-         $(document).ready(function () {
-             $('#sidebarCollapse').on('click', function () {
-                 $('#sidebar').toggleClass('active');
-             });
-         });
-    </script>
 </body>
 </html>

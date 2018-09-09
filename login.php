@@ -38,16 +38,16 @@
 					<div class="forgot">
 						<a href="#">Olvido su contraseña?</a>
 					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<a onclick="inicia_sesion();" class="btn btn-primary">Iniciar sesión</a>
-						</div>
-						<div class="col-md-6">
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_registro">Registrate</button>
-						</div>
-					</div>
 
 				</form>
+				<div class="row">
+					<div class="col-md-6">
+						<button onclick="inicia_sesion();" class="btn btn-primary">Iniciar sesión</button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_registro">Registrate</button>
+					</div>
+				</div>
 			</div>
 			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Registro" aria-hidden="true" id="modal_registro">
 			  <div class="modal-dialog modal-lg">
@@ -65,10 +65,10 @@
 							<br>
 					      		<div class="row">
 					      			<div class="col-md-6">
-					      				<input type="text" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Nombres*">
+					      				<input type="text" onkeyup="solo_letras(this.id,'btn_registtrar')" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Nombres*">
 					      			</div>
 					      			<div class="col-md-6">
-					      				<input type="text" class="form-control" name="txt_apellidos" id="txt_apellidos" placeholder="Apellidos*">
+					      				<input type="text" onkeyup="solo_letras(this.id,'btn_registtrar')" class="form-control" name="txt_apellidos" id="txt_apellidos" placeholder="Apellidos*">
 					      			</div>
 					      		</div>
 					      		<br>
@@ -81,15 +81,15 @@
 					      			</div>
 					      		</div>  
 				      </div>
-				      <div class="modal-footer">
-				      		<div class="col-md-2">
-				        		<a onclick="registrar_usuario();" class="btn btn-primary">Registrar</a>
-				      		</div>
-				      		<div class="col-md-2">
-				        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-				      		</div>
-				      </div>
 				</form>
+			    <div class="modal-footer">
+		      		<div class="col-md-2">
+		        		<button onclick="registrar_usuario();" disabled="disabled" class="btn btn-primary" name="btn_registtrar" id="btn_registtrar">Registrar</button>
+		        	</div>
+		      		<div class="col-md-2">
+		        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		      		</div>
+			    </div>
 			    </div>
 			  </div>
 			</div>
