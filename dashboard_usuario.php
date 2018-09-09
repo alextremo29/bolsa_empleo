@@ -7,11 +7,7 @@
         session_start();
         include 'control_session.php';
     ?>
-    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
-
     <title>Dashboard <?php echo $_SESSION["nombre_pers"]; ?></title>
-
-    <!-- Styles -->
 </head>
 <body>
     <div id="app">
@@ -50,9 +46,6 @@
                             </a>
                         </li>
                 </nav>
-                <main class="py-4">
-                   
-                </main>
                 <div id="content">
                     <nav class="navbar navbar-default">
                         <div class="container-fluid">
@@ -64,6 +57,7 @@
                         </div>
                     </nav>
                 </div>
+                <?php include 'datos_personales.php' ?>
         </div>
     </div>
 <!-- Creando un footer para las paginas-->

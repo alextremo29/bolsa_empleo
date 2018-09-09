@@ -78,8 +78,17 @@ body#LoginForm{
 /*
     DEMO STYLE
 */
+.card-header{
+  padding-top: 28px;
+}
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
