@@ -61,7 +61,7 @@
         </div>
     </div>
 <!-- Creando un footer para las paginas-->
-<footer class="py-3" style="bottom: 0px; background-color: #193338;">
+<footer class="py-3" style="background-color: #193338;">
   <div class="container">
     <p class="m-0 text-center text-white">Copyright &copy; Bambusa.Digital 2018</p>
   </div>
