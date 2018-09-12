@@ -33,7 +33,7 @@ function inicia_sesion() {
 function registrar_usuario() {
 	$('#respuesta_registro').html('<i class="fas fa-spinner fa-spin" style="font-size: 34px;"></i>');
 	var formulario_registro = document.registro;
-	if (formulario_registro.txt_nombre.value==""||formulario_registro.txt_apellidos.value==""||formulario_registro.txt_email.value==""||formulario_registro.txt_password.value=="") {
+	if (formulario_registro.txt_identificacion.value==""||formulario_registro.txt_nombre.value==""||formulario_registro.txt_apellidos.value==""||formulario_registro.txt_email.value==""||formulario_registro.txt_password.value=="") {
 		$('#respuesta_registro').html(
 			'<div class="alert alert-warning alert-dismissible fade show" role="alert">'+
 				'<strong>Importante:</strong> Por favor complete todos los datos<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
@@ -42,6 +42,7 @@ function registrar_usuario() {
 		$.post('controllers/controlador_login.php',
 			{
 				nombre:formulario_registro.txt_nombre.value,
+				identificacion:formulario_registro.txt_identificacion.value,
 				apellidos:formulario_registro.txt_apellidos.value,
 				correo:formulario_registro.txt_email.value,
 				password:formulario_registro.txt_password.value,

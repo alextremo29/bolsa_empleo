@@ -21,10 +21,10 @@
 			
 
 		}
-		public function registrar_usuario($nombre,$apellidos,$correo,$password)
+		public function registrar_usuario($identificacion,$nombre,$apellidos,$correo,$password)
 		{
 			//$sql_persona="holas";
-			$sql_persona = "insert into persona (nombre_pers,correo,password,rol) value ('$nombre $apellidos', '$correo', '$password',1)";
+			$sql_persona = "insert into persona (identificacion, nombre_pers,correo,password,rol) values ('$identificacion', '$nombre $apellidos', '$correo', '$password',1)";
 			$query_persona = mysqli_query(Conectar::con(),$sql_persona);
 			return $query_persona;
 		}

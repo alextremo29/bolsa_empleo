@@ -63,6 +63,12 @@
 				      <div class="modal-body">
 				      		<div id="respuesta_registro"></div>
 							<br>
+								<div class="row">
+									<div class="col-md-6">
+					      				<input type="text" onkeyup="solo_numeros(this.id)" class="form-control" name="txt_identificacion" id="txt_identificacion" placeholder="Identificacion*">
+					      			</div>
+								</div>
+								<br>
 					      		<div class="row">
 					      			<div class="col-md-6">
 					      				<input type="text" onkeyup="solo_letras(this.id,'btn_registtrar')" class="form-control" name="txt_nombre" id="txt_nombre" placeholder="Nombres*">

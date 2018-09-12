@@ -6,7 +6,7 @@
 			iniciar_sesion($_POST["correo"], $_POST["password"]);
 			break;
 		case 'registrar_usuario':
-			registrar_usuario($_POST["nombre"],$_POST["apellidos"],$_POST["correo"], $_POST["password"]);
+			registrar_usuario($_POST["identificacion"],$_POST["nombre"],$_POST["apellidos"],$_POST["correo"], $_POST["password"]);
 			break;
 		
 		default:
@@ -41,14 +41,14 @@
 		}
 		echo json_encode($respuesta);
 	}
-	function registrar_usuario($nombre,$apellidos,$correo,$password)
+	function registrar_usuario($identificacion,$nombre,$apellidos,$correo,$password)
 	{
-		//echo "Nombre: ".$nombre." Apellidos: ".$apellidos." Correo: ".$correo." Passowrd: ".$password;
+		//echo "Nombre: ".$nombre." Apellidos: ".$apellidos." Correo: ".$correo." Passowrd: ".$password." Identificacion: ".$identificacion;
 		$respuesta= array();
 		$usuario = new Usuario();
 		$existe_usuario = $usuario->consultar_usuario($correo);
 		if (empty($existe_usuario)) {
-			$usuario_nuevo = $usuario->registrar_usuario($nombre,$apellidos,$correo,$password);
+			$usuario_nuevo = $usuario->registrar_usuario($identificacion,$nombre,$apellidos,$correo,$password);
 			$respuesta["usuario_nuevo"]=$usuario_nuevo;
 			if ($usuario_nuevo) {
 				$respuesta["valor"]=1; 
